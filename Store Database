@@ -1,0 +1,17 @@
+--Create a store database
+
+CREATE TABLE Todds_Games (ID INTEGER PRIMARY KEY, Name TEXT, Price INTEGER);
+
+INSERT INTO Todds_Games VALUES (1, "World of Warcraft", 30);
+INSERT INTO Todds_Games VALUES (2, "Dead By Daylight", 25);
+INSERT INTO Todds_Games VALUES (3, "Fortnite", 5);
+INSERT INTO Todds_Games VALUES (4, "Roblox", 5);
+INSERT INTO Todds_Games VALUES (5, "Call of Duty", 20);
+
+--Display the database ordered by price
+
+SELECT * FROM Todds_Games ORDER BY Price;
+
+--Calculate the average price of the items in the database 
+
+SELECT AVG(Price) FROM Todds_Games;
